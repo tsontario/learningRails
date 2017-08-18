@@ -17,7 +17,8 @@ class ProductTest < ActiveSupport::TestCase
   test "Product is not valid without price greater-than zero" do
     products(:ruby).price = -0.01
     assert products(:ruby).invalid?
-    assert_equal ["mst be greater than or equal to 0.01"], products(:ruby).errors[:price]
-    puts products(:ruby).errors[:price]
+    assert_equal ["must be greater than or equal to 0.01"], products(:ruby).errors[:price]
   end
+
+
 end

@@ -49,6 +49,7 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
+    min-height: inherit;
     background: #141;
 
     ul {
@@ -60,6 +61,28 @@
           font-size: small;
         }
       }
+    }
+
+    #cart {
+      font-size: 0.7em;
+      color: #bfb;
+
+      table tr td {
+        font-size: 1em;
+
+      }
+
+      .total-line .total-cell {
+        font-weight: bold;
+        border-top: 1px solid #595;
+      }
+    }
+
+    #date_time {
+      padding: 1em 2em;
+      float: left;
+      vertical-align: bottom;
+      color: #bfb;
     }
   }
 }
